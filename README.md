@@ -23,3 +23,22 @@ The system detects sentiment, performs a diagnosis of negative reviews, and gene
 	OpenAI – GPT-4o-mini model
 	Pydantic – for schema validation
 	Python Dotenv – for environment variable management
+
+**📂 Project Structure**
+. ├── review_analyzer.py # Main code (workflow definition + test run) ├── .env # Environment variables (contains API keys) ├── requirements.txt # Python dependencies └── README.md # Project documentation
+
+**▶️ Usage**
+
+**Run the workflow with a sample review:** python replisense.py 
+
+**Example input:**
+
+initial_state = { 'review': 'I am trying to play this game for a long time, its hanging every now and then, its frustrating' }
+
+**Example output**
+
+{ "review": "I am trying to play this game for a long time, its hanging every now and then, its frustrating", "sentiments": "negative", "diagnosis": { "issue_type": "Performance", "tone": "frustrated", "urgency": "high" }, "response": "We’re really sorry you had this experience. It sounds frustrating dealing with repeated performance issues. Our team is actively working on improving stability, and your feedback helps us prioritize this. Thank you for your patience." }
+
+**🧩 Workflow Design The workflow is built as a LangGraph StateGraph: START → find_sentiments → [positive_response | run_diagonis → negative_response] → END**
+
+Positive Review → Directly generates a warm thank-you note. Negative Review → Runs a detailed diagnosis, then generates an empathetic resolution message.
