@@ -18,11 +18,11 @@ The system detects sentiment, performs a diagnosis of negative reviews, and gene
 **Workflow Orchestration → Powered by LangGraph with conditional logic and state management.**
 
 **🛠️ Tech Stack**
-	LangChain – for LLM integration and structured outputs
-	LangGraph – for workflow orchestration
-	OpenAI – GPT-4o-mini model
-	Pydantic – for schema validation
-	Python Dotenv – for environment variable management
+	LangChain – for LLM integration and structured outputs
+	LangGraph – for workflow orchestration
+	OpenAI – GPT-4o-mini model
+	Pydantic – for schema validation
+	Python Dotenv – for environment variable management
 
 **📂 Project Structure**
 . ├── review_analyzer.py # Main code (workflow definition + test run) ├── .env # Environment variables (contains API keys) ├── requirements.txt # Python dependencies └── README.md # Project documentation
