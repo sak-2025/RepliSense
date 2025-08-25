@@ -29,7 +29,11 @@ The system detects sentiment, performs a diagnosis of negative reviews, and gene
 	Python Dotenv – for environment variable management
 
 **📂 Project Structure**
-. ├── review_analyzer.py # Main code (workflow definition + test run) ├── .env # Environment variables (contains API keys) ├── requirements.txt # Python dependencies └── README.md # Project documentation
+
+├── review_analyzer.py # Main code (workflow definition + test run) 
+├── .env # Environment variables (contains API keys) 
+├── requirements.txt # Python dependencies 
+└── README.md # Project documentation
 
 **▶️ Usage**
 
