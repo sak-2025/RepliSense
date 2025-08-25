@@ -19,6 +19,7 @@ The system detects sentiment, performs a diagnosis of negative reviews, and gene
 
 **🛠️ Tech Stack**
 	LangChain – for LLM integration and structured outputs
+ 
 	LangGraph – for workflow orchestration
 	OpenAI – GPT-4o-mini model
 	Pydantic – for schema validation
